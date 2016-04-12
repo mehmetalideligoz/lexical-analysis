@@ -4,7 +4,7 @@
 
 Mummy is a graph description language that specifies the objects in directed/undirected graphs. User can define graphs containing edge, and vertex attributes. This documentation will provide all the information necessary to understand how to use Mummy for declaring and querying graphs. Various types of queries can be expressed in Mummy, querying graphs will be discussed in the second part of this document. User can define in a few lines of code what it would take many lines of code in Java to express.
 
-## 1.1 DEFINING DIRECTED GRAPHS
+#### 1.1 DEFINING DIRECTED GRAPHS
 
 A directed graph is a set of vertices and a collection of directed edges that each connects an ordered pair of vertices. DirectedGraph is reserved keyword for defining directed graphs. 
 
@@ -32,7 +32,7 @@ A directed graph is a set of vertices and a collection of directed edges that ea
         vertex_2;
         edge_1 = vertex_1 -> vertex_2; 
     } 
-## 1.2 DEFINING UNDIRECTED GRAPHS
+#### 1.2 DEFINING UNDIRECTED GRAPHS
 An undirected graph is a set of vertex which are connected together, where all 
 the edges are bidirectional. UndirectedGraph is reserved for defining undirected 
 graphs.
@@ -58,7 +58,7 @@ graphs.
         edge_1 = vertex_1 -- vertex_2; 
     } 
 
-## 1.3 DEFINING VERTEX PROPERTIES
+#### 1.3 DEFINING VERTEX PROPERTIES
 
 Mulitple properties can be attached to a vertex, where a property consist of a (name,value) pair. A property must be in the format of <String, ?>.  
 
@@ -70,7 +70,7 @@ Mulitple properties can be attached to a vertex, where a property consist of a (
         student[“ID”] = 12345;
     }  
 
-## 1.4 DEFINING EDGE PROPERTIES
+#### 1.4 DEFINING EDGE PROPERTIES
 
     UndirectedGraph friends = { 
         student_1; 
@@ -95,7 +95,7 @@ Mulitple properties can be attached to a vertex, where a property consist of a (
     
     }
 
-## 1.5 DYNAMIC TYPING
+#### 1.5 DYNAMIC TYPING
 It supports a dynamic type system for the property values (property names should be strings). Strings, integers, and floats are supported as primitive types.
     
 
