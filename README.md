@@ -74,72 +74,41 @@ Mulitple properties can be attached to a vertex, where a property consist of a (
 ## 1.4 DEFINING EDGE PROPERTIES
 
     UndirectedGraph friends = { 
-    
-    student_1; 
-    
-    student_2;
-    
-    student_3; 
-    
-    # Attaches multiple properties 
-    
-    student_1[“name”] = “Mehmet Ali”; 
-    
-    student_1[“ID”] = 21200471; 
-    
-    student_2[“name”] = “Yiğit”; 
-    
-    student_2[“ID”] = 21401797;
-    
-    student_3[“name”] = “Mahmut”; 
-    
-    student_3[“ID”] = 212001458; 
-
-    
-    
-    // Connect student_1 -- student_2; student_2 -- student_3, and student--student_3;
-    edge_1 = student_1 -- student_2; 
-    edge_2 = student_2 -- student_3; 
-    # Attaches multiple properties to edges.
-    student_1 -- student_3[“friendship_duration”] = 36;   # Friends for 36 
-    
-    months 
-    
-    edge_1[“friendship_duration”] = 13;  # Friends for 31 months
-    
-    edge_2[“friendship_duration”] = 22;  # Friends for 22 months 
-    
-    edge_1[“project_partner”] = 1; # Project partners = True 
-    
-    edge_2[“project_partner”] = 0; # Project partners = False
+        student_1; 
+        student_2;
+        student_3; 
+        // Attaches multiple properties 
+        student_1[“name”] = “Mehmet Ali”; 
+        student_1[“ID”] = 119; 
+        student_2[“name”] = “Yiğit”; 
+        student_2[“ID”] = 120;
+        student_3[“name”] = “Mahmut”; 
+        student_3[“ID”] = 121; 
+        
+        edge_1 = student_1 -- student_2; 
+        edge_2 = student_2 -- student_3; 
+        // Attaches multiple properties to edges.
+        student_1 -- student_3[“friendship_duration”] = 36;   # Friends for 36 months
+        edge_1[“friendship_duration”] = 13;  # Friends for 31 months
+        edge_2[“friendship_duration”] = 22;  # Friends for 22 months 
+        edge_1[“project_partner”] = 1; # Project partners = True 
+        edge_2[“project_partner”] = 0; # Project partners = False
     
     }
 
-1.5 DYNAMIC TYPING
-
-It supports a dynamic type system for the property values (property names 
-
-should be strings)
-
-Strings, integers, and floats are supported as primitive types.
-
-UndirectedGraph ug = { 
-
-student;
-
-student[“name”] = “Mehmet Ali”;  # value as a string
-
-student[“ID”] = 21200471; # value as a integer
-
-student[“height”] = 1.8; # value as a float 
-
-student[“course_list”] = [“cs315”, “cs319”, “cs484”];  # value as a list
-
-# value as a set
-
-student[“classmates”] = (“Berk”, “Berke”, “Berkay”, “Berkecan”, “Ayberk” );
-
-# value as a map
-
-student[“expenses”] = {“clothing”: 200, “eating”: 150, “transportation”: 250};
-
+## 1.5 DYNAMIC TYPING
+It supports a dynamic type system for the property values (property names should be strings). Strings, integers, and floats are supported as primitive types.
+    UndirectedGraph ug = { 
+    
+        student;
+        student[“name”] = “Mehmet Ali”;  // value as a string
+        student[“ID”] = 21200471; // value as a integer
+        student[“height”] = 1.8; // value as a float 
+        student[“course_list”] = [“cs315”, “cs319”, “cs484”];  // value as a list
+        
+        // value as a set
+        student[“classmates”] = (“Berk”, “Berke”, “Berkay”, “Berkecan”, “Ayberk” );
+        
+        // value as a map
+        student[“expenses”] = {“clothing”: 200, “eating”: 150, “transportation”: 250};
+    }
