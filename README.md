@@ -40,12 +40,12 @@ graphs.
     UndirectedGraph ug_1 = { 
         // Creates an empty undirected graph
     }
- 
 
     UndirectedGraph ug_2 = { 
         // Creates an undirected graph with one vertex 
         vertex_1; 
     }
+
     UndirectedGraph ug_3 = { 
         // Creates vertex_1 vertex_2, then connects vertex_1 and vertex_2
         vertex_1 -- vertex_2;
@@ -97,8 +97,9 @@ Mulitple properties can be attached to a vertex, where a property consist of a (
 
 ## 1.5 DYNAMIC TYPING
 It supports a dynamic type system for the property values (property names should be strings). Strings, integers, and floats are supported as primitive types.
-    UndirectedGraph ug = { 
     
+
+    UndirectedGraph ug = { 
         student;
         student[“name”] = “Mehmet Ali”;  // value as a string
         student[“ID”] = 119; // value as a integer
