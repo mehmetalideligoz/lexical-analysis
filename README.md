@@ -54,8 +54,7 @@ graphs.
      } 
     
     UndirectedGraph ug_4 = { 
-        // The edge between vertex_1 and vertex_2 is assigned to variable 
-        “edge_1” 
+        // The edge between vertex_1 and vertex_2 is assigned to variable “edge_1” 
         edge_1 = vertex_1 -- vertex_2; 
     } 
 
@@ -102,7 +101,7 @@ It supports a dynamic type system for the property values (property names should
     
         student;
         student[“name”] = “Mehmet Ali”;  // value as a string
-        student[“ID”] = 21200471; // value as a integer
+        student[“ID”] = 119; // value as a integer
         student[“height”] = 1.8; // value as a float 
         student[“course_list”] = [“cs315”, “cs319”, “cs484”];  // value as a list
         
